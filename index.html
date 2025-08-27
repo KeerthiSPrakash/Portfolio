@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Keerthi Sayiprakash – Power BI Portfolio</title>
+  <meta name="description" content="Portfolio of Power BI dashboards and data projects by Keerthi Sayiprakash" />
+  <style>
+    :root{
+      --bg:#0f172a;          /* slate-900 */
+      --panel:#111827;       /* gray-900 */
+      --muted:#94a3b8;       /* slate-400 */
+      --text:#e5e7eb;        /* gray-200 */
+      --brand:#3b82f6;       /* blue-500 */
+      --brand-2:#06b6d4;     /* cyan-500 */
+      --ring:rgba(59,130,246,.2);
+      --radius:16px;
+      --shadow:0 10px 20px rgba(0,0,0,.3), 0 6px 6px rgba(0,0,0,.2);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(120deg,var(--bg),#0b1022);color:var(--text)}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .avatar{width:44px;height:44px;border-radius:999px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:var(--shadow)}
+    h1{font-size:clamp(22px,3vw,28px);margin:0}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-weight:600}
+    nav a:hover{color:#fff}
+
+    .hero{margin:18px 0 28px;background:linear-gradient(135deg,rgba(59,130,246,.08),rgba(6,182,212,.08));border:1px solid rgba(148,163,184,.15);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .hero h2{margin:0 0 8px;font-size:clamp(22px,4vw,32px)}
+    .hero p{margin:0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:18px}
+    .card{background:linear-gradient(180deg,rgba(17,24,39,.9),rgba(17,24,39,.85));border:1px solid rgba(148,163,184,.14);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+    .thumb{aspect-ratio:16/9;width:100%;object-fit:cover;background:#0b1220}
+    .content{padding:16px}
+    .card h3{margin:0 0 8px;font-size:18px}
+    .card p{margin:0 0 12px;color:var(--muted);line-height:1.45}
+    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+    .tag{font-size:12px;padding:4px 10px;border-radius:999px;background:rgba(59,130,246,.12);color:#cfe1ff;border:1px solid rgba(59,130,246,.3)}
+
+    .actions{display:flex;gap:10px;margin-top:auto;padding:0 16px 16px}
+    .btn{flex:1;text-align:center;text-decoration:none;font-weight:700;padding:10px 12px;border-radius:12px;border:1px solid rgba(148,163,184,.2);background:#0b1220;color:#e6f0ff;transition:.2s ease;box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
+    .btn:hover{transform:translateY(-1px);border-color:rgba(59,130,246,.5);box-shadow:0 6px 16px rgba(59,130,246,.25)}
+    .btn.primary{background:linear-gradient(135deg,var(--brand),var(--brand-2));border:none;color:white}
+
+    section{margin:30px 0}
+    h2.section-title{margin:0 0 12px;font-size:22px}
+
+    .about{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    .panel{background:linear-gradient(180deg,rgba(17,24,39,.9),rgba(17,24,39,.85));border:1px solid rgba(148,163,184,.14);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+    ul{margin:8px 0 0 18px}
+
+    footer{margin:34px 0 10px;color:var(--muted);font-size:14px;text-align:center}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+
+    @media (max-width:800px){
+      .about{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <h1>Keerthi Sayiprakash</h1>
+          <div style="color:var(--muted);font-size:14px">Data Analyst • Power BI • SQL</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <h2>Professional Portfolio</h2>
+     
+    </div>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <img class="thumb" src="D:\PowerbiProjects\Images\ProductsOverview.JPG" alt="Sales Dashboard screenshot">
+          <div class="content">
+            <h3>Sales Performance Dashboard</h3>
+            <p>This dashboard uses KPI cards to highlight total items sold, number of products, total profit, and profit margin for quick business insights. A bar chart displays the top 10 products sold, while another highlights profit contribution from the top 5 products. Delivery performance is tracked using stacked bar charts to show on-time, early, and late deliveries across shipping classes. A line chart illustrates monthly sales trends for the top 5 products, helping identify seasonal patterns and performance consistency.</p>
+            <div class="tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Data Modeling</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn" href="D:\PowerbiProjects\Images\ProductsOverview.JPG" target="_blank" rel="noopener">View Screenshot</a>
+            <a class="btn" href="‪D:\PowerbiProjects\Files\Sales Analysis.pbix" target="_blank" rel="noopener">Download PBIX</a>
+            <a class="btn primary" href="https://app.powerbi.com/view?r=eyJrIjoiN2I3M2NiZTQtZGU5Yi00MmQ2LTg4YmYtODliYWIwMTU4NzA4IiwidCI6ImNlOWY3NDhkLTJlMjMtNDViNC04N2UzLWNiYjM1NjYwYTM5ZSJ9" target="_blank" rel="noopener">View Interactive</a>          
+	</div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <img class="thumb" src="D:\PowerbiProjects\Images\PatientsOverview.JPG" alt="Patients Overview Dashboard screenshot">
+          <div class="content">
+            <h3>Vista Life Trust Overview Dashboard</h3>
+            <p>This dashboard combines KPI cards for quick highlights, pie charts for patient distribution across hospitals, departments, and insurers, and a gender split for demographic balance. A grouped bar chart tracks yearly patient trends by department, making it easy to spot stability or changes over time. The mix of visuals ensures both an at-a-glance overview and deeper insights.</p>
+            <div class="tags">
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Data Modelling</span>
+            </div>
+          </div>
+          <div class="actions">
+            <a class="btn" href="D:\PowerbiProjects\Images\PatientsOverview.JPG" target="_blank" rel="noopener">View Screenshot</a>
+            <a class="btn" href="‪D:\PowerbiProjects\Files\Vistalife Report.pbix" target="_blank" rel="noopener">Download PBIX</a>
+            <a class="btn primary" href="https://app.powerbi.com/view?r=eyJrIjoiZjQ0MDk3MTQtNzlmOS00NmY1LWFhYmUtMmM1OGUwZTM3ZDdlIiwidCI6ImNlOWY3NDhkLTJlMjMtNDViNC04N2UzLWNiYjM1NjYwYTM5ZSJ9" target="_blank" rel="noopener">View Interactive</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="about">
+        <div class="panel">
+          <p>
+            Hi, I’m <strong>Keerthi Sayiprakash.</strong> I'm a Data Analyst with experience in SQL, Python, Power BI, and SSRS. Proficient in automating reporting, enhancing data quality, and streamlining workflows. Skilled at data modelling, developing dashboards and optimizing data pipelines. Collaborative in working with stakeholders across Finance, Operations, and other business functions to deliver precise insights, resolve queries, and support data-driven decision-making.
+          </p>
+        </div>
+        <div class="panel">
+          <h3 style="margin-top:0">Skills</h3>
+          <div class="tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Python</span>
+            <span class="tag">ETL</span>
+            <span class="tag">Storytelling</span>
+<span class="tag">SSRS</span>
+<span class="tag">Data Modelling</span>
+<span class="tag">Power Query</span>
+<span class="tag">Tableau</span>
+<span class="tag">T-SQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="panel">
+        <div class="cta">
+          <a class="btn primary" href="mailto:keerthisayiprakash@gmail.com">Email Me</a>
+          <a class="btn" href="D:\PowerbiProjects\Files\Keerthi Sayiprakash CV.pdf" target="_blank" rel="noopener">Download Resume</a>
+          <a class="btn" href="https://github.com/KeerthiSPrakash" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/keerthi-sayiprakash-695965173/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Keerthi Sayiprakash • Built with GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    // set current year
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
